@@ -1,11 +1,10 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
 
 :root {
     --primary: #fe2c55;
     --black: #000;
     --white: #fff;
-    --text-color: #333;
+    --text-color: #161823;
 
     // Default Layout
     --defaut-layout-header-height: 60px;
@@ -16,6 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: transparent;
 }
 
 html {
@@ -23,10 +23,28 @@ html {
 }
 
 body {
-    font-family: Arial;
+    font-family: 'TiktokFont', Arial;
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+@font-face {
+    font-family: TiktokFont;
+    src: url(/assets/fonts/TikTokFont-Bold.woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: TiktokFont;
+    src: url(/assets/fonts/TikTokFont-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: TiktokFont;
+    src: url(/assets/fonts/TikTokFont-Semibold.woff2);
+    font-weight: 600;
 }
 
 button,
@@ -39,4 +57,26 @@ input,
 a[href] {
     text-decoration: none;
     color: var(--text-color);
+}
+
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        list-style: 2.2rem;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-content {
+        padding: 8px 9px;
+    }
+
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px;
+    }
 }
