@@ -8,6 +8,7 @@
     width: var(--defaut-layout-width);
     padding: 0 var(--default-layout-horizontal-spacer);
     min-height: 1000px;
+    margin-top: var(--defaut-layout-header-height);
     display: flex;
 }
 
