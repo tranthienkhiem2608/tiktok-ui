@@ -5,9 +5,9 @@
 
 .search {
     position: relative;
+    display: flex;
     height: var(--search-height);
     padding-left: 16px;
-    display: flex;
     background-color: #f1f1f2;
     border-radius: var(--search-border-radius);
     border: 1.5px solid transparent;
@@ -16,6 +16,7 @@
     input {
         flex: 1;
         height: 100%;
+        padding-right: 40px;
         color: var(--black);
         font-size: 1.6rem;
         background-color: transparent;
